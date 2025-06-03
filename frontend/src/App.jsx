@@ -1,16 +1,21 @@
-import React from 'react'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import Mainbody from './components/Mainbody.jsx'
+import React, { useState } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import MainBody from './components/Mainbody';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
-  return (
-    <>
-        <Navbar />
-        <Mainbody />
-        <Footer />
-    </>
-  )
-}
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-export default App
+  return (
+    <Routes>
+      <Route path="/" element={isAuthenticated ? (<><Navbar /><MainBody /><Footer /></>) : (<Navigate to="/login" />)} />
+      <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
+  );
+};
+
+export default App;
