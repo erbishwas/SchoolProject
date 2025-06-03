@@ -10,11 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@tailwindcss/vite": "^4.1.8",
     "flowbite": "^3.1.2",
+=======
+    "axios": "^1.9.0",
+    "formik": "^2.4.6",
+>>>>>>> 68b36b45c9da1275780c2dafa70cbfb76874d46d
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.1",
+    "yup": "^1.6.1",
+    "@tailwindcss/vite": "^4.1.8",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
