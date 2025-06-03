@@ -11,7 +11,13 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={isAuthenticated ? (<><Navbar /><MainBody /><Footer /></>) : (<Navigate to="/login" />)} />
+      <Route path="/" element={isAuthenticated ? (
+        <><Navbar />
+        <MainBody />
+        <div className='w-full absolute bottom-0'>
+        <Footer />
+        </div>
+        </>) : (<Navigate to="/login" />)} />
       <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/register" element={<Register />} />
     </Routes>
