@@ -42,7 +42,7 @@ const Login = ({ setIsAuthenticated }) => {
           <Form className="space-y-4">
             <div>
               <label className="block">Phone</label>
-              <Field name="phone" className="w-full border p-2 rounded" />
+              <Field name="phone" className="w-full border p-2 rounded" />  
               <ErrorMessage name="phone" component="div" className="text-red-500 text-sm" />
             </div>
             <div>
