@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <section className="mt-[30px] md:mt-[10px] h-100 flex justify-center items-center" id="home">
+    <section className="mt-[200px] md:mt-[10px] h-100 flex justify-center items-center" id="home">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-gray-900" id="hero-title">Pashu<span className='text-green-700'>Grow</span>, a saviour for farmers</h1>
         <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 lg:px-48 text-gray-700"> A digital marketplace empowering farmers to list, connect, sell and get recents updates about agriculture and agricultural products.</p>
@@ -22,7 +22,7 @@ const Main = () => {
         </div>
       </div>
     </section>
-    
+
   )
 }
 
